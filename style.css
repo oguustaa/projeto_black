@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+    height: 100vh;
+    background-size: 100%;
+    background-image: url(img/bandeira_americana.avif);
+
+}
+
+.cabecalho_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 100px;
+}
+
+.icon-text {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.nav__container {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav_links {
+    text-decoration: none;
+    color: rgb(0, 0, 144);
+    font-size: 18px;
+    text-transform: uppercase;
+}
