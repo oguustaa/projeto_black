@@ -1,9 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primary-font-family: 'Poppins', sans-serif;
+    --icon-font-family: 'Winky Sans', sans-serif;
+    --primary-color: #000;
+    --secondary-color: rgb(0, 0, 144);
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--primary-font-family)
 }
+
+
+/* ESTILOS GERAIS */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILOS DO HEADER */
 
 .cabecalho {
     height: 100vh;
@@ -13,36 +36,31 @@
 }
 
 .cabecalho_container {
-    display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .container_icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
 }
 
 .icon {
-    width: 100px;
+    width: 80px;
 }
 
 .icon-text {
     font-size: 25px;
     text-transform: uppercase;
+    font-family: var(--icon-font-family);
 }
 
-.nav__container {
-    display: flex;
-    gap: 20px;
+.nav_container {
+    gap: 28px;
     list-style-type: none;
 }
 
 .nav_links {
     text-decoration: none;
-    color: rgb(0, 0, 144);
+    color: var(--secondary-color);
     font-size: 18px;
     text-transform: uppercase;
 }
