@@ -6,8 +6,8 @@
     --primary-font-family: 'Poppins', sans-serif;
     --icon-font-family: 'Winky Sans', sans-serif;
     --primary-color: #000;
-    --secondary-color: rgb(0, 0, 144);
-    --tertiary-color: rgb(231, 46, 46);
+    --secondary-color: #0F1D7C;
+    --tertiary-color: #DC0032;
 }
 
 
@@ -33,6 +33,7 @@
     height: 100vh;
     background-size: 100%;
     background-image: url(img/bandeira_americana.avif);
+    background-repeat: no-repeat;
 
 }
 
@@ -64,4 +65,11 @@
     color: var(--secondary-color);
     font-size: 18px;
     text-transform: uppercase;
+}
+
+h1 {
+    font-family: var(--icon-font-family);
+    text-align: center;
+    margin-top: 50px;
+    color: var(--tertiary-color);
 }
