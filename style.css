@@ -29,14 +29,6 @@
 
 /* ESTILOS DO HEADER */
 
-.cabecalho {
-    height: 100vh;
-    background-size: 100%;
-    background-image: url(img/bandeira_americana.avif);
-    background-repeat: no-repeat;
-
-}
-
 .cabecalho_container {
     justify-content: space-evenly;
 }
@@ -72,4 +64,11 @@ h1 {
     text-align: center;
     margin-top: 50px;
     color: var(--tertiary-color);
+}
+
+.perfil {
+width: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
