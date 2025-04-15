@@ -8,6 +8,7 @@
     --primary-color: #000;
     --secondary-color: #0F1D7C;
     --tertiary-color: #DC0032;
+    --color-white: #fff; 
 }
 
 
@@ -31,6 +32,7 @@
 
 .cabecalho_container {
     justify-content: space-evenly;
+    padding: 20px;
 }
 
 .container_icon {
@@ -59,30 +61,30 @@
     text-transform: uppercase;
 }
 
+/* ESTILOS DO INÍCIO */
+
 h1 {
     font-family: var(--icon-font-family);
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
     color: var(--tertiary-color);
+    font-size: 30px;
 }
 
 .perfil {
-width: 400px;
+    width: 400px;
 }
 
 .test {
-padding: 20px;
-gap: 20px;
-background-color:white;
-
-
+    padding: 20px;
+    gap: 20px;
+    background-color: var(--tertiary-color);
 }
 
 .perfil_text {
-width: 500px;
-font-size: 20px;
+    width: 650px;
+    font-size: 20px;
+    color: var(--color-white);
 }
 
-.início {
-background-color:red;
-}
+/* ESTILOS SOBRE */
