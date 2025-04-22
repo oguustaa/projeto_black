@@ -19,7 +19,6 @@
     font-family: var(--primary-font-family)
 }
 
-
 /* ESTILOS GERAIS */
 
 .flex {
@@ -30,9 +29,11 @@
 
 /* ESTILOS DO HEADER */
 
+
 .cabecalho_container {
     /* justify-content: space-evenly; */
     padding: 20px;
+    background-color: var(--secondary-color);
 }
 
 .container_icon {
@@ -56,7 +57,7 @@
 
 .nav_links {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--color-white);
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -71,8 +72,8 @@ h1 {
     font-family: var(--icon-font-family);
     text-align: center;
     margin-top: 80px;
-    color: var(--tertiary-color);
     font-size: 30px;
+    color: var(--tertiary-color);
 }
 
 .perfil {
@@ -109,6 +110,8 @@ h2 {
     text-transform: uppercase;
     color: var(--tertiary-color);
     font-weight: 400;
+    text-align: center;
+    font-weight: 500;
 }
 
 .p_about {
@@ -122,6 +125,7 @@ h3 {
     text-transform: uppercase;
     text-align: center;
     font-size: 25px;
+    color: var(--tertiary-color);
 }
 
 .card_feedback {
@@ -143,5 +147,12 @@ h3 {
 }
 
 .planos {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+}
+
+h4 {
+    text-align: center;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
 }
