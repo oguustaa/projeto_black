@@ -31,7 +31,7 @@
 /* ESTILOS DO HEADER */
 
 .cabecalho_container {
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     padding: 20px;
 }
 
@@ -63,6 +63,10 @@
 
 /* ESTILOS DO INÍCIO */
 
+#home {
+    height: 80vh;
+}
+
 h1 {
     font-family: var(--icon-font-family);
     text-align: center;
@@ -72,7 +76,8 @@ h1 {
 }
 
 .perfil {
-    width: 400px;
+    width: 300px;
+    border-radius: 50%;
 }
 
 .test {
@@ -88,3 +93,55 @@ h1 {
 }
 
 /* ESTILOS SOBRE */
+
+#about {
+    height: 100vh;
+    /* background-color: var(--secondary-color); */
+}
+
+.about_container {
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+h2 {
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    font-weight: 400;
+}
+
+.p_about {
+    color: var(--color-white);
+    font-size: 19px;
+}
+
+/* ESTILOS FEEDBACK */
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+
+.card_feedback {
+    gap: 50px;
+}
+
+.card_img {
+    width: 450px;
+}
+
+/* ESTILOS PLANOS */
+
+#planos {
+    height: 100vh;
+}
+
+.planos_container {
+    gap: 20px;
+}
+
+.planos {
+    background-color: var(--secondary-color);
+}
