@@ -5,13 +5,16 @@
 :root {
     --primary-font-family: 'Poppins', sans-serif;
     --icon-font-family: 'Winky Sans', sans-serif;
-    --primary-color: #000;
-    --secondary-color: #0F1D7C;
-    --tertiary-color: #DC0032;
-    --color-white: #fff; 
+    --black-color: #000;
+    --blue-color: #0F1D7C;
+    --red-color: #DC0032;
+    --color-white: #fff;
+    --bottom-form-hover:#051058;
 }
 
-
+body{
+background-color: #181818;
+}
 * {
     margin: 0;
     padding: 0;
@@ -31,9 +34,8 @@
 
 
 .cabecalho_container {
-    /* justify-content: space-evenly; */
     padding: 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--blue-color);
 }
 
 .container_icon {
@@ -64,16 +66,14 @@
 
 /* ESTILOS DO INÍCIO */
 
-#home {
-    height: 80vh;
-}
 
 h1 {
     font-family: var(--icon-font-family);
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     font-size: 30px;
-    color: var(--tertiary-color);
+    color: var(--red-color);
 }
 
 .perfil {
@@ -84,7 +84,8 @@ h1 {
 .test {
     padding: 20px;
     gap: 20px;
-    background-color: var(--tertiary-color);
+    background-color: var(--red-color);
+    border-radius: 10px;
 }
 
 .perfil_text {
@@ -95,23 +96,21 @@ h1 {
 
 /* ESTILOS SOBRE */
 
-#about {
-    height: 100vh;
-    /* background-color: var(--secondary-color); */
-}
-
 .about_container {
     flex-direction: column;
     padding: 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--blue-color);
+    border-radius: 10px;
 }
 
 h2 {
     text-transform: uppercase;
-    color: var(--tertiary-color);
-    font-weight: 400;
+    color: var(--red-color);
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: var(--icon-font-family);
+    font-weight: bold;
     text-align: center;
-    font-weight: 500;
 }
 
 .p_about {
@@ -124,8 +123,12 @@ h2 {
 h3 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 25px;
-    color: var(--tertiary-color);
+    font-size: 30px;
+    color: var(--red-color);
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-family: var(--icon-font-family);
+    margin-top: 100px;
 }
 
 .card_feedback {
@@ -138,21 +141,99 @@ h3 {
 
 /* ESTILOS PLANOS */
 
-#planos {
-    height: 100vh;
-}
-
 .planos_container {
     gap: 20px;
 }
 
 .planos {
-    background-color: var(--tertiary-color);
+    background-color: var(--blue-color);
+    padding: 20px;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 h4 {
     text-align: center;
-    font-size: 23px;
+    font-size: 30px;
     text-transform: uppercase;
-    color: var(--tertiary-color);
+    color: var(--red-color);
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-family: var(--icon-font-family);
+    font-weight: bold;
+}
+
+h5 {
+  color:var(--color-white);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.planos_text {
+ color: var(--color-white);
+ margin-top: 10px;
+}
+
+.payment {
+margin: 0 auto;
+height: 250px;
+}
+ 
+.payment_text {
+color: var(--color-white);
+}
+
+.form_container{
+margin-top: 120px;
+}
+
+.form-container {
+width: 700px;
+margin: 0 auto;
+background-color: var(--red-color);
+padding: 50px;
+border-radius: 10px;
+color:var(--color-white);
+}
+
+h6 {
+text-align: center;
+margin-bottom: 20px;
+text-transform: uppercase;
+font-size: 20px;
+font-weight: 300;
+}
+
+label{
+display: block;
+margin-bottom: 5px;
+font-weight: 400;
+font-size: 15px;
+}
+
+input,textarea{
+width: 100%;   
+padding: 10px;
+margin-bottom:15px;
+border-radius: 5px;
+border: none;
+}
+
+button{
+width: 100%;
+padding: 10px;
+background-color: var(--blue-color);
+color: var(--color-white);
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:hover{
+background-color: var(--bottom-form-hover);
 }
