@@ -2,18 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
+@import url(responsive.css);
 :root {
     --primary-font-family: 'Poppins', sans-serif;
     --icon-font-family: 'Winky Sans', sans-serif;
     --black-color: #000;
-    --blue-color: #0F1D7C;
+    --blue-color: #020b47;
+    --red-background-color: #a90028;
     --red-color: #DC0032;
     --color-white: #fff;
-    --bottom-form-hover:#051058;
-}
-
-body{
-background-color: #181818;
 }
 * {
     margin: 0;
@@ -36,20 +33,6 @@ background-color: #181818;
 .cabecalho_container {
     padding: 20px;
     background-color: var(--blue-color);
-}
-
-.container_icon {
-    gap: 10px;
-}
-
-.icon {
-    width: 50px;
-}
-
-.icon-text {
-    font-size: 25px;
-    text-transform: uppercase;
-    font-family: var(--icon-font-family);
 }
 
 .nav_container {
@@ -84,7 +67,7 @@ h1 {
 .test {
     padding: 20px;
     gap: 20px;
-    background-color: var(--red-color);
+    background-color: var(--red-background-color);
     border-radius: 10px;
 }
 
@@ -106,6 +89,7 @@ h1 {
 h2 {
     text-transform: uppercase;
     color: var(--red-color);
+    font-size: 30px;
     margin-top: 50px;
     margin-bottom: 30px;
     font-family: var(--icon-font-family);
@@ -116,6 +100,17 @@ h2 {
 .p_about {
     color: var(--color-white);
     font-size: 19px;
+}
+
+.contact {
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--red-background-color);
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 /* ESTILOS FEEDBACK */
@@ -174,66 +169,163 @@ h5 {
 }
 
 .planos_text {
- color: var(--color-white);
- margin-top: 10px;
+    color: var(--color-white);
+    margin-top: 10px;
 }
 
 .payment {
-margin: 0 auto;
-height: 250px;
+    margin: 0 auto;
+    height: 250px;
 }
  
 .payment_text {
-color: var(--color-white);
+    color: var(--color-white);
 }
 
-.form_container{
-margin-top: 120px;
+/* ESTILOS RODAPÉ */
+
+.footer {
+    background-color: var(--red-background-color);
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
 }
 
-.form-container {
-width: 700px;
-margin: 0 auto;
-background-color: var(--red-color);
-padding: 50px;
-border-radius: 10px;
-color:var(--color-white);
+.copyright {
+    font-size: 18px;
+    color: var(--color-white);
 }
 
-h6 {
-text-align: center;
-margin-bottom: 20px;
-text-transform: uppercase;
-font-size: 20px;
-font-weight: 300;
+/* ESTILOS RESPONSIVOS */
+
+@media only screen and (max-width: 768px) {
+
+     /* ESTILO INÍCIO */
+
+    .cabecalho {
+        display: none;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .test {
+        flex-direction: column;
+    }
+
+    .perfil {
+        border-radius: 10%;
+    }
+
+    .perfil_text {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* ESTILO SOBRE */
+
+    h2, h3, h4, h5{
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .p_about {
+        text-align: center;
+    }
+
+    /* ESTILOS DO FEEDBACK */
+
+    .card_feedback {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card_img {
+        width: 350px;
+    }
+
+    /* ESTILOS PACOTE */
+
+    .planos_container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .planos {
+        width: 300px;
+        height: 340px;
+    }
+
+    .planos_text {
+        text-align: center;
+    }
+
+    .payment {
+        height: 350px;
+    }
 }
 
-label{
-display: block;
-margin-bottom: 5px;
-font-weight: 400;
-font-size: 15px;
-}
+@media only screen and (max-width: 992px) {
 
-input,textarea{
-width: 100%;   
-padding: 10px;
-margin-bottom:15px;
-border-radius: 5px;
-border: none;
-}
+    h1,h2, h3, h4, h5{
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 
-button{
-width: 100%;
-padding: 10px;
-background-color: var(--blue-color);
-color: var(--color-white);
-border: none;
-border-radius: 5px;
-font-size: 16px;
-cursor: pointer;
-}
+    /* ESTILO INÍCIO */
 
-button:hover{
-background-color: var(--bottom-form-hover);
+    .test {
+        padding: 20px 70px;
+    }
+
+    .perfil_text {
+        max-width: 600px;
+        font-size: 22px;
+    }
+
+    /* ESTILO SOBRE */
+
+    .p_about {
+        font-size: 22px;
+    }
+
+    .contact {
+        font-size: 22px;
+    }
+
+    /* ESTILO FEEDBACK */
+
+    .card_feedback {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* ESTILOS PLANOS */
+
+    .planos_container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .planos {
+        width: 700px;
+        height: 340px;
+    }
+
+    .planos_text, .payment_text {
+        font-size: 25px;
+    }
+
+    .payment {
+        height: 380px;
+    }
+
+    /* ESTILOS RODAPÉ */
+
+    .copyright {
+        font-size: 20px;
+    }
 }
