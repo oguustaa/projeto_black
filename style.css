@@ -19,6 +19,10 @@
     font-family: var(--primary-font-family)
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 /* ESTILOS GERAIS */
 
 .flex {
