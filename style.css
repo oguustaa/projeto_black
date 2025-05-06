@@ -206,7 +206,7 @@ h5 {
 
 /* ESTILOS RESPONSIVOS */
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
      /* ESTILO INÍCIO */
 
@@ -275,7 +275,7 @@ h5 {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media (min-width: 770px) and (max-width: 992px) {
 
     h1,h2, h3, h4, h5{
         font-size: 30px;
